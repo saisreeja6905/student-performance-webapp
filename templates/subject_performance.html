@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Subject Performance</h1>
+
+<table>
+  <tr>
+    <th>Subject</th>
+    <th>Branch</th>
+    <th>Year</th>
+    <th>Average Marks</th>
+  </tr>
+
+  {% for r in data %}
+  <tr>
+    <td>{{ r.subject_name }}</td>
+    <td>{{ r.department }}</td>
+    <td>{{ r.year }}</td>
+    <td>{{ r.avg_marks if r.avg_marks else "-" }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

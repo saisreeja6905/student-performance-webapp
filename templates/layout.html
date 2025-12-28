@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Portal</h2>
+    <a href="/">Home</a>
+    <a href="/students">Students</a>
+    <a href="/students/year/2">Year 2</a>
+    <a href="/students/year/3">Year 3</a>
+    <a href="/students/branch/CSE">CSE</a>
+    <a href="/students/branch/ECE">ECE</a>
+    <a href="/subjects">Subjects</a>
+    <a href="/add-subject">Add Subject</a>
+    <a href="/dashboard">Performance</a>
+    <a href="/student-summary">Student Summary</a>
+    <a href="/subject-performance">Subject Performance</a>
+    <a href="/manage-marks">Manage Marks</a>
+
+
+
+</div>
+
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

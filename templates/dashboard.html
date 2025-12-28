@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Performance Dashboard</h1>
+
+<table>
+<tr>
+  <th>Student</th>
+  <th>Branch</th>
+  <th>Year</th>
+  <th>Subject</th>
+  <th>Marks</th>
+</tr>
+
+{% for r in data %}
+<tr>
+  <td>{{ r.student_name }}</td>
+  <td>{{ r.department }}</td>
+  <td>{{ r.year }}</td>
+  <td>{{ r.subject_name }}</td>
+  <td>{{ r.marks if r.marks is not none else "-" }}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

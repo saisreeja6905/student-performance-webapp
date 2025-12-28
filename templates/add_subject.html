@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Add New Subject</h1>
+
+<form method="POST">
+    <label>Subject ID</label><br>
+    <input type="number" name="subject_id" required><br><br>
+
+    <label>Subject Name</label><br>
+    <input type="text" name="subject_name" required><br><br>
+
+    <label>Department</label><br>
+    <select name="department" required>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+    </select><br><br>
+
+    <label>Year</label><br>
+    <select name="year" required>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select><br><br>
+
+    <button type="submit">Add Subject</button>
+</form>
+
+{% endblock %}

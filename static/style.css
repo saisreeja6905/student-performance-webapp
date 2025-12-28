@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Segoe UI, sans-serif;
+    background: #f4f6f9;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #2c3e50;
+    position: fixed;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.sidebar a:hover {
+    background: #34495e;
+    padding-left: 6px;
+}
+
+.content {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+
+th {
+    background: #3498db;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}

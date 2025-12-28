@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Subjects</h1>
+
+{% if subjects|length == 0 %}
+<p>No subjects available.</p>
+{% else %}
+<ul>
+    {% for s in subjects %}
+        <li>{{ s.subject_name }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}

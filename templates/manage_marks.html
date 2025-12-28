@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Add / Update Marks</h1>
+
+<form method="POST">
+
+    <label>Student</label><br>
+    <select name="student_id" required>
+        {% for s in students %}
+        <option value="{{ s.student_id }}">
+            {{ s.student_name }}
+        </option>
+        {% endfor %}
+    </select><br><br>
+
+    <label>Subject</label><br>
+    <select name="subject_id" required>
+        {% for sub in subjects %}
+        <option value="{{ sub.subject_id }}">
+            {{ sub.subject_name }} ({{ sub.department }} - Year {{ sub.year }})
+        </option>
+        {% endfor %}
+    </select><br><br>
+
+    <label>Marks</label><br>
+    <input type="number" name="marks" min="0" max="100" required><br><br>
+
+    <button type="submit">Save Marks</button>
+</form>
+
+{% endblock %}

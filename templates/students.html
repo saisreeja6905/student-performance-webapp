@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+<table>
+<tr>
+  <th>ID</th><th>Name</th><th>Branch</th><th>Year</th>
+</tr>
+{% for s in students %}
+<tr>
+  <td>{{ s.student_id }}</td>
+  <td>{{ s.student_name }}</td>
+  <td>{{ s.department }}</td>
+  <td>{{ s.year }}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}
