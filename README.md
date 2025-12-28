@@ -29,3 +29,17 @@ git clone https://github.com/saisreeja6905/student-performance-webapp.git
 cd student-performance-webapp
 pip install -r requirements.txt
 python app.py
+
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Students Management
+![Students](screenshots/students.png)
+
+### Student Performance
+![Student Performance](screenshots/students_performance.png)
+
+### Subjects
+![Subjects](screenshots/subjects.png)
