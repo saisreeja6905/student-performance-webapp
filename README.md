@@ -23,13 +23,6 @@ and analyze academic performance through a clean dashboard interface.
 - **subjects** (subject_id, subject_name, department, year)
 - **marks** (student_id, subject_id, marks)
 
-## ▶ How to Run the Project
-```bash
-git clone https://github.com/saisreeja6905/student-performance-webapp.git
-cd student-performance-webapp
-pip install -r requirements.txt
-python app.py
-
 ## 📸 Screenshots
 
 ### Dashboard
@@ -43,3 +36,12 @@ python app.py
 
 ### Subjects
 ![Subjects](screenshots/subjects.png)
+
+## ▶ How to Run the Project
+```bash
+git clone https://github.com/saisreeja6905/student-performance-webapp.git
+cd student-performance-webapp
+pip install -r requirements.txt
+python app.py
+
+
